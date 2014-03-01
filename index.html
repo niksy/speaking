@@ -4,10 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<title>Uvod u Bower oli zašto koristiti front-end package manager</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,10 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
-
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/theme/current.css" id="theme">
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -40,317 +34,285 @@
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+
+				<section class="align-left">
+					<div class="intro">
+						<h1>Uvod u Bower</h1>
+						<h2>Ili zašto koristiti <i>front-end<br />package manager</i></h2>
+					</div>
+					<p class="me font-weight-300">Ivan Nikolić <br /><a href="//twitter.com/niksy">@niksy</a></p>
+
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+					<section>
+						<ul class="list-unbulleted">
+							<li>Node <span class="arrow-left">&#9758;</span> NPM</li>
+							<li>PHP <span class="arrow-left">&#9758;</span> Composer</li>
+							<li>Ruby <span class="arrow-left">&#9758;</span> RubyGems</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Browser<span class="question-mark">?</span></h2>
+					</section>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						<div data-markdown>
+							<script type="text/template">
+								* Zašto je to, u suštini, bitno?
+								* Što je sa front-endom?
+							</script>
+						</div>
 					</aside>
+
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
+
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon#/themes">Moon</a> -
-						<a href="?theme=solarized#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
-
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+						<img src="lib/images/bower-logo.svg" alt="Bower" class="logo logo-bower" />
 
 						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
+							<div data-markdown>
+								<script type="text/template">
+									* Etimologija
+									* Povijest (tko je napravio Bower i slično)
+									* Bower namjerno želi biti lightweight - ne nameće neku posebnu sintaksu ili dodatne module nego radi jednu stvar i tu stvar radi dobro - povlači stvari i drži ih popisane na jednom mjestu
+								</script>
+							</div>
 						</aside>
+
+					</section>
+
+					<section>
+						<p>Package manager for the web</p>
+						<p><a href="http://bower.io" class="font-weight-700">bower.io</a></p>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+
+						<h2>Kako instaliram Bower<span class="question-mark">?</span></h2>
+						<pre class="align-center"><code data-trim="data-trim">
+							npm install -g bower
+						</code></pre>
+
+						<aside class="notes">
+							<div data-markdown>
+								<script type="text/template">
+									* Instalacija (node, npm)
+									* Bez GUI-ja
+									* CLI api je kao i kod npm-a, dosta su slični
+								</script>
+							</div>
+						</aside>
+
+					</section>
+
+					<section>
+						<p class="heading--beta">Ugh, konzola&#8230;</p>
+					</section>
+
+					<!-- <section class="align-left">
+						<div style="font-size:0.9em;">
+							<p class="quote">If you're having workflow problems <br />I feel bad for you son <br /><br />I got 99 problems <br />but a CLI ain't one</p>
+							<p>— Jay-(Code)Z</p>
+						</div>
+					</section> -->
+
+				</section>
+
+				<section>
+
+					<section>
+						<h2>Kako instaliram paket<span class="question-mark">?</span></h2>
+						<pre class="align-center"><code data-trim="data-trim">
+							bower install &#60;paket&#62;
+						</code></pre>
+						<div class="footnote">
+							<p>Paketi se instaliraju u <br />"bower_components" direktorij</p>
+						</div>
+					</section>
+
+					<section>
+
+						<pre class="align-center"><code data-trim="data-trim">
+							bower install &#60;paket&#62;#&#60;verzija&#62;
+						</code></pre>
+
+						<pre class="align-center fragment" style="font-size:0.8em;"><code data-trim="data-trim">
+							bower install &#60;ime&#62;=&#60;paket&#62;#&#60;verzija&#62;
+						</code></pre>
+
+					</section>
+
+					<section>
+
+						<div style="font-size:1.5em;">
+							<p><code>--save</code></p>
+						</div>
+
+					</section>
+
+				</section>
+
+				<section>
+
+					<section class="align-left">
+						<p class="heading--beta">Ne sviđa mi se <br />instalacijski direktorij&#8230;</p>
 					</section>
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-current-blue">highlight-current-blue</p>
+						<h2><code>.bowerrc</code></h2>
+						<pre style="font-size:0.75em;"><code data-trim="data-trim">{
+  "directory": "direktorij/mog/projekta"
+}</code></pre>
+
+					</section>
+
+				</section>
+
+				<section>
+					<h2>Kako brišem paket<span class="question-mark">?</span></h2>
+					<pre class="align-center"><code data-trim="data-trim">
+						bower uninstall &#60;paket&#62;
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Kako nadograđujem paket<span class="question-mark">?</span></h2>
+					<pre class="align-center"><code data-trim="data-trim">
+						bower update &#60;paket&#62;
+					</code></pre>
+				</section>
+
+				<section class="align-left">
+					<p class="heading--beta">Mogu li odvojiti <br/>CSS i JS komponente<span class="question-mark">?</span></p>
+					<p class="fragment heading--beta">Ne <span class="smiley">&#9785;</span></p>
+				</section>
+
+				<section>
+
+					<section>
+						<h2>Kako kreiram modul<span class="question-mark">?</span></h2>
+						<pre class="align-center"><code data-trim="data-trim">
+							bower init
+						</code></pre>
+
+						<aside class="notes">
+							<div data-markdown>
+								<script type="text/template">
+									* Dobra stvar je da ne moraš
+									* Nije ni potrebno jer svaki repo moze odmah postati paket bez bower.json
+								</script>
+							</div>
+						</aside>
+
+					</section>
+
+					<section>
+						<h2><code>bower.json</code></h2>
+						<pre style="font-size:0.45em;"><code style="max-height:none;" data-trim="data-trim">
+{
+  "name": "jszgb-meetup",
+  "version": "0.5.0",
+  "main": "awesome.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "&#62;=1.9 &#60;2.0",
+    "modernizr": "~2.7"
+  },
+  "devDependencies": {
+    "qunit": "1.3"
+  }
+}</code></pre>
+					</section>
+
+				</section>
+
+				<section>
+					<section class="align-left">
+						<div style="font-size:0.9em;">
+							<p class="heading--beta">Ali, još ne vidim prednosti <br />nad običnim kopi/pejstom&#8230;</p>
+						</div>
+					</section>
+					<section class="align-left">
+						<ul class="list-unbulleted list-spaced">
+							<li>Jednostavno testiranje koda</li>
+							<li class="fragment">Lista modula koji se <br />koriste na projektu</li>
+							<li class="fragment">Praksa <i>tagiranja</i> i <i>forkanja</i> koda</li>
+						</ul>
+					</section>
+
+					<aside class="notes">
+						<div data-markdown>
+							<script type="text/template">
+								* Više verzija jQueryja
+								* Zasto ne c/p modula?
+									* Pretpostavljam da dosta dizajnera koristi nešto poput Dropboxa za održavanje vizuala - ovo je slično tome
+								* Separation of concerns
+								* Natjera te na dobru praksu održavanja svojih projekata - tagiranje, forkanje i slično
+								* Svaki put kad pomisliš "Mogao bih promjeniti ovu liniju koda" to je trenutak da
+								kreiraš verzioniranu reprezentaciju te promjene jer kad tad ćeš opet trebat isti
+								komad koda na nekom drugom projektu
+							</script>
+						</div>
+					</aside>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Alternativa<span class="question-mark">?</span></h2>
+					</section>
+					<section class="align-left">
+						<ul class="list-unbulleted list-spaced">
+							<li>Standardni kopi/pejst <span class="fragment smiley">&#9785;</span></li>
+							<li class="fragment"><a href="https://github.com/component/component">component</a>, <a href="http://jamjs.org/">jam</a>, <a href="http://volojs.org/">volo</a></li>
+							<li class="fragment">npm + <a href="http://browserify.org/">browserify</a></li>
+						</ul>
+					</section>
+
+					<aside class="notes">
+						<div data-markdown>
+							<script type="text/template">
+								* Zasto ne neki od standardnih package manager poput npm ili composer?
+								* Zasto ne npm? http://stackoverflow.com/questions/18641899/difference-between-bower-and-npm/18652918#18652918
+							</script>
+						</div>
+					</aside>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Za kraj&#8230;</h2>
+					</section>
+					<section class="align-left">
+						<ul class="list-resources list-unbulleted list-spaced">
+							<li>1.3.0</li>
+							<li class="fragment"><a href="http://bower.io/search">bower.io/search</a></li>
+							<li class="fragment"><a href="https://github.com/bower/bower">GitHub</a></li>
+							<li class="fragment"><a href="https://github.com/gsmlg/microweb/blob/master/bowerrc.template"><code>.bowerrc</code> postavke</a></li>
+							<li class="fragment">Programatski API, <br/>privatni registri, &#8230;</li>
+							<li class="fragment"><a href="https://github.com/wilmoore/frontend-packagers">Usporedba alternativa</a></li>
+						</ul>
 					</section>
 				</section>
 
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
+					<p><span style="font-size:700%; font-weight:300; line-height:1;">&#9996;</span></p>
+					<p><a href="//twitter.com/niksy">@niksy</a></p>
 				</section>
 
 			</div>
@@ -362,22 +324,11 @@ function linkify( selector ) {
 
 		<script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
-				progress: true,
+				controls: false,
+				progress: false,
 				history: true,
-				center: true,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal.js
+				transition: 'linear',
 				dependencies: [
 					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
