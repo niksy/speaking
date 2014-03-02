@@ -1,4 +1,4 @@
 [submodule "speak/bower"]
 	path = bower
-	url = git@github.com:niksy/speaking.git
+	url = https://github.com/niksy/speaking.git
 	branch = bower
