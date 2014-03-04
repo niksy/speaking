@@ -47,6 +47,9 @@
 
 				<section>
 					<section>
+						<h2>Package management</h2>
+					</section>
+					<section>
 						<ul class="list-unbulleted">
 							<li>Node <span class="arrow-left">&#9758;</span> NPM</li>
 							<li>PHP <span class="arrow-left">&#9758;</span> Composer</li>
@@ -95,6 +98,39 @@
 
 				<section>
 
+					<section class="align-left">
+						<div style="font-size:0.9em;">
+							<p class="heading--beta">Ne vidim prednosti <br />nad običnim kopi/pejstom&#8230;</p>
+						</div>
+					</section>
+
+					<section class="align-left">
+						<ul class="list-unbulleted list-spaced">
+							<li>Jednostavno testiranje koda</li>
+							<li class="fragment">Lista modula koji se <br />koriste na projektu</li>
+							<li class="fragment">Praksa <i>tagiranja</i> i <i>forkanja</i> koda</li>
+						</ul>
+					</section>
+
+					<aside class="notes">
+						<div data-markdown>
+							<script type="text/template">
+								* Više verzija jQueryja
+								* Zasto ne c/p modula?
+									* Pretpostavljam da dosta dizajnera koristi nešto poput Dropboxa za održavanje vizuala - ovo je slično tome
+								* Separation of concerns
+								* Natjera te na dobru praksu održavanja svojih projekata - tagiranje, forkanje i slično
+								* Svaki put kad pomisliš "Mogao bih promjeniti ovu liniju koda" to je trenutak da
+								kreiraš verzioniranu reprezentaciju te promjene jer kad tad ćeš opet trebat isti
+								komad koda na nekom drugom projektu
+							</script>
+						</div>
+					</aside>
+
+				</section>
+
+				<section>
+
 					<section>
 
 						<h2>Kako instaliram Bower<span class="question-mark">?</span></h2>
@@ -114,9 +150,9 @@
 
 					</section>
 
-					<section>
+					<!-- <section>
 						<p class="heading--beta">Ugh, konzola&#8230;</p>
-					</section>
+					</section> -->
 
 					<!-- <section class="align-left">
 						<div style="font-size:0.9em;">
@@ -145,17 +181,9 @@
 							bower install &#60;paket&#62;#&#60;verzija&#62;
 						</code></pre>
 
-						<pre class="align-center fragment" style="font-size:0.8em;"><code data-trim="data-trim">
-							bower install &#60;ime&#62;=&#60;paket&#62;#&#60;verzija&#62;
+						<pre class="align-center fragment"><code data-trim="data-trim">
+							bower install &#60;ime&#62;=&#60;paket&#62;
 						</code></pre>
-
-					</section>
-
-					<section>
-
-						<div style="font-size:1.5em;">
-							<p><code>--save</code></p>
-						</div>
 
 					</section>
 
@@ -241,37 +269,6 @@
 				</section>
 
 				<section>
-					<section class="align-left">
-						<div style="font-size:0.9em;">
-							<p class="heading--beta">Ali, još ne vidim prednosti <br />nad običnim kopi/pejstom&#8230;</p>
-						</div>
-					</section>
-					<section class="align-left">
-						<ul class="list-unbulleted list-spaced">
-							<li>Jednostavno testiranje koda</li>
-							<li class="fragment">Lista modula koji se <br />koriste na projektu</li>
-							<li class="fragment">Praksa <i>tagiranja</i> i <i>forkanja</i> koda</li>
-						</ul>
-					</section>
-
-					<aside class="notes">
-						<div data-markdown>
-							<script type="text/template">
-								* Više verzija jQueryja
-								* Zasto ne c/p modula?
-									* Pretpostavljam da dosta dizajnera koristi nešto poput Dropboxa za održavanje vizuala - ovo je slično tome
-								* Separation of concerns
-								* Natjera te na dobru praksu održavanja svojih projekata - tagiranje, forkanje i slično
-								* Svaki put kad pomisliš "Mogao bih promjeniti ovu liniju koda" to je trenutak da
-								kreiraš verzioniranu reprezentaciju te promjene jer kad tad ćeš opet trebat isti
-								komad koda na nekom drugom projektu
-							</script>
-						</div>
-					</aside>
-
-				</section>
-
-				<section>
 					<section>
 						<h2>Alternativa<span class="question-mark">?</span></h2>
 					</section>
@@ -300,18 +297,17 @@
 					</section>
 					<section class="align-left">
 						<ul class="list-resources list-unbulleted list-spaced">
-							<li>1.3.0</li>
-							<li class="fragment"><a href="http://bower.io/search">bower.io/search</a></li>
+							<li><a href="http://bower.io/search">bower.io/search</a></li>
 							<li class="fragment"><a href="https://github.com/bower/bower">GitHub</a></li>
 							<li class="fragment"><a href="https://github.com/gsmlg/microweb/blob/master/bowerrc.template"><code>.bowerrc</code> postavke</a></li>
-							<li class="fragment">Programatski API, <br/>privatni registri, &#8230;</li>
+							<li class="fragment">Programatski API</li>
 							<li class="fragment"><a href="https://github.com/wilmoore/frontend-packagers">Usporedba alternativa</a></li>
 						</ul>
 					</section>
 				</section>
 
 				<section>
-					<p><span style="font-size:700%; font-weight:300; line-height:1;">&#9996;</span></p>
+					<p><span style="font-size:550%; font-weight:300; line-height:1;">&#9786;</span></p>
 					<p><a href="//twitter.com/niksy">@niksy</a></p>
 				</section>
 
